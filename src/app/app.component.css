@@ -1,0 +1,56 @@
+hr {
+  height: 10px;
+  background-color: #F5C55E;
+}
+
+/* para el menu */
+.mainmenubtn {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+/*fin menu*/
+
+/*Para las dos columnas*/
+.box02{
+  float:left;
+  width: 20%;
+  height: 80px;
+  background: #F5C55E;
+}
+.box03{
+  float:right;
+  width: 80%;
+  height: 80px;
+  background: #F5C55E;
+}
+.box04{
+  float:left;
+  width: 80%;
+  height: 300px;
+  background: write;
+}

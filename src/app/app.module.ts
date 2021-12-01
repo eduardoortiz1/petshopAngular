@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { MascotasModule } from './mascotas/mascotas.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GaleriaComponent } from './galeria/galeria.component';
+import {GaleriaComponent} from '../mascotas/galeria/galeria.component';
+
 
 
 

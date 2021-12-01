@@ -1,21 +1,34 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListadoComponent } from './listado/listado.component';
-import { RegistroComponent } from './registro/registro.component';
+import { UsuariosListadoComponent } from './listado/listado.component';
+import { UsuariosRegistroComponent } from './registro/registro.component';
+
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { UsuarioService } from './servicios/usuario.service'
 
 
 
 @NgModule({
   declarations: [
-    ListadoComponent,
-    RegistroComponent
+    UsuariosListadoComponent,
+    UsuariosRegistroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+   //  NgbModule,
+    FormsModule,
+    RouterModule
+  ],
+  providers:[
+    UsuarioService
   ],
   //Para que la exportación se envíe con todo y sus componentes:
   exports: [
-    ListadoComponent
+    UsuariosListadoComponent,
+    UsuariosRegistroComponent
   ]
 })
 export class UsuariosModule { }
