@@ -9,7 +9,6 @@ const routes: Routes = [
   { path:"home", component:PrincipalComponent},
   { path:"usuarios", component:UsuariosListadoComponent},
   { path:"usuarios/registro", component:UsuariosRegistroComponent},
-  { path:"usuarios/registro/:id", component:UsuariosRegistroComponent},
   { path:"galeria", component:GaleriaComponent},
   { path:"**", redirectTo:"/home", pathMatch:'full'},
 

@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsuariosListadoComponent } from './listado/listado.component';
 import { UsuariosRegistroComponent } from './registro/registro.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { UsuarioService } from './servicios/usuario.service'
+import { ServiuserService } from './servicios/serviuser.service';
 
 
 
@@ -18,12 +16,12 @@ import { UsuarioService } from './servicios/usuario.service'
   ],
   imports: [
     CommonModule,
-   //  NgbModule,
+    NgbModule,
     FormsModule,
     RouterModule
   ],
   providers:[
-    UsuarioService
+    ServiuserService
   ],
   //Para que la exportación se envíe con todo y sus componentes:
   exports: [
