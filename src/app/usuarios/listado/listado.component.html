@@ -1,30 +1,22 @@
+<h3>Listado de Usuarios del sitio AnimalPetShop</h3>
 
-<!-- 
--->
-<div>
+<p>Cantidad de registros:
+  <br>{{usuarios.length}}
+</p>
 
-<h2> Esta es la página de listado </h2> 
-<table>
-    <thead>
-        <tr>
-            <th scope="col">Nombres</th>
-            <th scope="col">Apellidos</th>
-            <th scope="col">Identifi</th>
-            
-            
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of usuarios">
-            <td>{{item.nombres}}</td>
-            <td>{{item.apellidos}}</td>
-            <td>{{item.identificacion}}</td>
-            
-           
-               
-            
-        </tr>
-    </tbody>
-</table>
-
-
+<table id="tablaclientes">
+		<thead>
+			<tr>
+				<th scope="col">Nombres</th>
+				<th scope="col">Apellidos</th>
+				<th scope="col">Identificacion</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of usuarios">
+				<td>{{item.nombres}}</td>
+				<td>{{item.apellidos}}</td>
+				<td>{{item.identificacion}}</td>
+			</tr>
+		</tbody>
+	</table>

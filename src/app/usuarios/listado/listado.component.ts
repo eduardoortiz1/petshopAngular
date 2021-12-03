@@ -12,12 +12,12 @@ import { Router } from '@angular/router';
 export class UsuariosListadoComponent implements OnInit {
 
   usuarios:Usuario[] = []
-  
+
   constructor(private usuariosSrv:ServiuserService, private router:Router) { } // se inyectó el servicio SERVIUSERSERVICE en el contructor
 
   ngOnInit(): void {
-    this.usuariosSrv.listarUsuarios().subscribe(data=> {
-      this.usuarios =data
+    this.usuariosSrv.cargarUsuarios().subscribe(data=> {
+      this.usuarios=data
 
     })
   }

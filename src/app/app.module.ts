@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MascotasModule,
     GeneralModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    
 
   ],
   providers: [],

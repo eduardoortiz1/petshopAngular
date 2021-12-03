@@ -1,4 +1,30 @@
 <p>Registro de usuarios works!</p>
+
+<form >
+	<label>Nombres: </label><input type="text" id="txtNombres" name="txtNombres" [(ngModel)]="nombres"><br>
+	<label>Apellidos: </label><input type="text" id="txtApellidos" name="txtApellidos" [(ngModel)]="apellidos"><br>
+	<label>Documento: </label><input type="text" id="txtDocumento" name="txtDocumentos"  [(ngModel)]="identificacion" ><br>
+	<input type="submit" id="btnGuardar" name="btnGuardar" value="Guardar">
+	<input type="reset" id="btnCancelar" name="btnCancelar" value="Cancelar" routerLink='/usuarios'>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ngNativeValidate (submit)="guardarUsuario()"
 <div>
     <form>
         <label>Nombres: </label><input type="text" id="txtNombres" name="txtNombres" ><br>
@@ -10,3 +36,4 @@
 
 
 </div>
+-->
